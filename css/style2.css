@@ -1,0 +1,48 @@
+/*Everything is connect to this */
+*{
+
+    border: 1px solid burlywood
+}
+
+
+/*is for commun page*/
+body{
+    font-size: 22px;
+}
+
+button,input,textarea,select{
+    font: inherit;
+}
+
+
+/*For only h1, h2 style blue*/
+/*  " , " comma is a group selector */
+h1 , h2{
+    color: rgb(82, 0, 49);
+}
+
+
+
+
+/*p is paragraph element*/
+p{
+    color: purple;
+}
+
+p span{
+    /*any text is change and bachgroud out their text is looking like a highlight text*/
+    text-transform: uppercase;
+    background-color: rgb(186, 95, 222);
+
+}
+
+/*class ma changes*/
+.gray{
+    color: gray;
+}
+
+
+/*for IDS*/
+#second{
+    font-style: oblique;
+}
