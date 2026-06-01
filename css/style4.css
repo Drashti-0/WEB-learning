@@ -1,0 +1,38 @@
+/*in html font size changed so all fonts are changed but selected are changes so only selected changed
+html{
+
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+/*border for h1 and in header this details all fonts are changed*/
+h1{
+    border: 2px dashed red;
+    width:50%;
+    font-size : 3rem;
+    padding: 0.5em;
+}
+
+
+main{
+    /*It depend on screen font if screen font is 16px and applied 2rem so 2*16px=32px*/
+
+    width:50vw;
+
+    font-size:  2rem;
+}
+
+p{
+    /*em is class font depende if this paragraph already declare 12px and 2em so 2*12px=24px*/
+    font-size:  2em;
+}
