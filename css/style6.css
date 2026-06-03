@@ -1,0 +1,52 @@
+body{
+    padding: 25%;
+    font-size : 2rem;
+    color: purple;
+    /*this size is 16 but 2rem so font size is 32*/
+
+
+    /*if all fonts are change so
+
+    -->>>font-family: sserif;
+    */
+
+}
+
+/* input, button{
+    font:inherit;
+} */
+
+p{
+    /*paragraph text underline(different different lines*/
+    text-decoration: underline;
+
+    /*paragraph na first first letter converting into capital form*/
+
+    text-transform: capitalize;
+
+  /*text left right center etc*/
+    text-align:justify;
+
+    /*in starting of paragraph first line space*/
+    text-indent: 50px;
+
+    /*vertical line set*/
+    line-height: 1.5;
+
+
+    /*between letter spacing*/
+    letter-spacing:0.1em;
+
+    /*how bold*/
+    font-weight:900;
+
+    /*font style*/
+    font-style: italic;
+
+                                
+
+ 
+ 
+
+
+}
