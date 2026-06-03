@@ -1,0 +1,73 @@
+/* @import is used for importing CSS files, not website links */
+/* @import url('https://a-z-animals.com/animals/'); */
+
+
+
+/*curor goes to behind a link and that convert to hand so its called pointer curser*/
+
+a{
+
+    /* dotted underline */
+    text-decoration: underline dotted;
+
+    cursor:pointer;
+
+    color:blue;
+    /*color default then visited link not purple show its always blue+*/
+
+}
+
+a:visited{
+
+    color:purple;
+
+    /*for vissited and after all blue is fix*/
+}
+
+/* remove space between a and :hover */
+a:hover
+,a:focus {
+
+    color:rgb(4, 207, 78);
+    background-color: aquamarine;
+
+    /*this feature is we can cursor on link and this color change*/
+
+}
+
+/* when link is clicked */
+a:active{
+
+    color:red;
+
+    /*while clicking the link*/
+
+}
+
+
+
+/*
+
+-->
+a:link       Normal link 
+a:visited    Already opened link 
+a:hover      Mouse link ઉપર આવે ત્યારે 
+a:active     Link પર click કરતી વખતે 
+
+ :link ત્યારે કામ કરે જ્યારે link હજુ સુધી એક પણ વખત open ન થઈ હોય 
+
+
+ :visited ત્યારે કામ કરે જ્યારે link ઓછામાં ઓછી એક વખત open થઈ ગઈ હો
+
+/* :hover ત્યારે કામ કરે જ્યારે mouse pointer link ઉપર આવે */
+
+/* :active ત્યારે કામ કરે જ્યારે link પર mouse button દબાવી રાખ્યો હોય */
+
+/* જો :visited અને :hover બંને લાગુ પડે તો :hover દેખાશે */
+
+/* જો :hover અને :active બંને લાગુ પડે તો :active દેખાશે */
+
+/* લખવાનો યોગ્ય ક્રમ: :link → :visited → :hover → :active (LVHA) */
+
+
+
