@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul {
+    text-align: left;
+    list-style-position: outside;
+    color: blue;
+    line-height: 2;
+
+    /* Heart image as bullet */
+    list-style-image: url('image/image.png');
+
+
+    
+}
+
+ul li :nth-child(2){
+    color:pink;
+}
+
+::marker{
+
+    color:purple;
+    font-family: fantasy;
+
+    font-size:lem;
+    comtecnt
+
+
+}
