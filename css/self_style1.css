@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+
+    background-image: url("https://images.stockcake.com/public/7/e/d/7edd2cb1-f590-448c-b2db-28010a887d68_large/gym-equipment-array-stockcake.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+/* Heading Style */
+h1{
+    color: rgb(236, 231, 65);
+    font-size: 45px;
+    text-shadow: 3px 3px 10px black;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px black;
+    line-height: 30px;
+}
+
+/* CARD 1 */
+.hero{
+    width: 500px;
+    height: 400px;
+
+    background-image: url("https://img.magnific.com/free-photo/strong-man-training-gym_1303-23478.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    position: relative;
+    cursor: pointer;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+
+    animation: leftSide 1s ease;
+    transition: 0.5s;
+}
+
+/* CARD 2 */
+.hero2{
+    width: 500px;
+    height: 400px;
+
+    margin-left: 350px;
+    margin-top: 50px;
+
+    background-image: url("https://www.shutterstock.com/image-photo/indoor-photo-show-5-european-260nw-2664619669.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    position: relative;
+    cursor: pointer;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+
+    animation: rightSide 1s ease;
+    transition: 0.5s;
+}
+
+/* Hover Effect */
+.hero:hover,
+.hero2:hover{
+    transform: scale(1.05) translateY(-10px);
+
+    box-shadow: 0px 15px 40px rgba(255,255,255,0.3);
+}
+
+/* Text Position */
+.content{
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+
+.c2{
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+
+.hero3{
+    width: 500px;
+    height: 400px;
+
+    background-image: url("https://media.istockphoto.com/id/1679800838/photo/close-up-of-feet-sportman-runner-running-on-treadmill-in-fitness-club-cardio-workout-healthy.jpg?s=612x612&w=0&k=20&c=E0kg8bUb1cNlbu0IuYCQlQryKHmbJFKQtvesZ8PmoEs=");
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.hero4{
+    width: 500px;
+    height: 400px;
+
+    background-image: url("photo4.jpg");
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.c3{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+.c4{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+/* Animation */
+@keyframes leftSide{
+    from{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightSide{
+    from{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
