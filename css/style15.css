@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+/*output right click and layout in main.container is all show about lie number*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+
+
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-auto-rows: 75px auto 75px;
+
+    grid-template-areas: ;
+
+}
+
+.container{
+    min-height:400px;
+    display: grid;
+    /* grid-template-columns: 200px 100px 200px  
+    /* grid-template-columns:  200px 1fr 1fr;
+    --->fr matlab jo fist 200px hoy to 2nd part and third part 100 matlab main part=50%first and 50%secound*/
+
+     grid-template-columns: repeat(2, 1fr 2fr);  
+     /* 4 mens te 4 var repet thase 1st 1fr 2nd 2fr am altrenate */
+   
+    grid-auto-rows: minmax(150px, auto);
+
+    row-gap: 1em;
+    /*in two rows 1 em spadce*/
+
+    column-gap: 1em;
+
+    /*gap: 1em 0.5em;
+    1st is row and secound is column*/
+
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.box:first-child{
+    background-color: blue;
+
+    /*in shortform---grid-column: 2/4{{{sem for row}}}*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /*(line ganvanu first margin thi start  tahy)1line thi start thay gap vadi forth ave tya sduhi*/
+
+    grid-row-start: 1;
+
+    grid-row-end: 3;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /*in box write in cemter*/
+
+    place-content: end center;
+
+
+}
+
+.box:nth-child(2){
+
+    background-color: purple;
+    grid-column:1/5;
+    grid-row:3/4;
+
+
+}
