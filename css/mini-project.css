@@ -1,0 +1,87 @@
+*{
+    margin: 0;         
+     /* Remove default margin */
+    padding: 0;        
+     /* Remove default padding */
+    box-sizing: border-box;
+     /* Include border and padding in element size */
+}
+
+body{
+    margin: 0.5rem;     
+    /* Space around page */
+    font-family: "Roboto", sans-serif; 
+    /* Set font style */
+    text-align: center; 
+    /* Center all text */
+}
+
+
+
+/*navigationa rea*/
+nav{
+    border: 2px solid black; /* Black border around menu */
+    border-radius: 2rem;     /* Rounded corners */
+    margin: 0 auto 1rem;     /* Center menu horizontally */
+    max-width: 600px;        /* Maximum menu width */
+    font-size: 2rem;         /* Text size */
+    line-height: 5rem;       /* Height of each menu item */
+    overflow: hidden; 
+    /*overflow: hidden = box ની બહાર નીકળતી વસ્તુઓને છુપાવી દેવું.*/
+    /* Hide extra content outside border */
+}
+
+
+
+
+h2{
+    padding: 1rem;    
+      /* Space inside heading */
+    background: gold;  
+     /* Gold background color */
+}
+
+
+
+ul{
+    list-style-type: none;
+     /* Remove bullet points */
+}
+
+
+
+
+li{
+    border-top: 1px solid #999; 
+    /* Line between menu items */
+}
+
+
+
+
+li a{
+    display: block; 
+    /* Make link fill entire row */
+}
+
+li a,
+li a:visited{
+    text-decoration: none;
+     /* Remove underline */
+    color: #333;          
+     /* Dark gray text color */
+}
+
+
+
+
+/*hover is mose on link and its arraow convert to hand like this */
+li a:hover,
+li a:focus{
+    background: #333;      
+    /* Dark background on hover */
+    color: whitesmoke;    
+     /* Light text color on hover */
+    cursor: pointer;      
+     /* Show hand cursor */
+}
