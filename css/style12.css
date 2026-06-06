@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    font-family:"roboto",Arial, Helvetica, sans-serif;
+    font-size:1.5rem;
+}
+
+.columns{
+    column-count: 3;
+    column-rule: 2px solid black;
+    column-gap: 3rem;
+}
+
+.columns p{
+    margin-top:0;
+}
+
+.columns h2{
+    margin-top:0;
+   /*  element above the margin set */
+
+    background-color: black;
+    /* background is black */
+    color: white;
+
+    padding: 1rem;
+    /*comlumns vache split*/
+    break-inside: avoid;
+
+    /*columns ahithi start thay*/
+    break-before: column;
+
+}
+
+/*quote is different class so is new paragraph*/
+.columns .quote{
+
+    margin-top: 2rem;
+    font-size:3rem;
+    text-align: center;
+    color: black;
+
+    /*Aa element badha columns ne cross kari ne full width ma dekhad.*/
+    column-span:all;
+
+}
+
+/*Column 1 | Column 2 | Column 3
+Paragraph| Paragraph| Paragraph
+
+        QUOTE
+   (all columns span)
+
+Paragraph| Paragraph| Paragraph*/
+
+.nowrap{
+    white-space: nowrap;
+}
