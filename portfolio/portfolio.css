@@ -1,0 +1,149 @@
+.photo{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    float:right;
+}
+
+figure img{
+    width:50px;
+    height:50px;
+}
+
+figure{
+    position:absolute;
+    top:20px;
+    right:20px;
+    margin:0;
+}
+
+/* 3 Dot Menu */
+
+.menu{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+summary{
+    list-style:none;
+    cursor:pointer;
+    font-size:32px;
+    color:#1e3a8a;
+    transition:0.3s;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+summary:hover{
+    color:#9ca3af;
+    cursor:pointer;
+}
+
+details a{
+    display:block;
+    width:120px;
+    padding:10px;
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    margin-top:3px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+details a:hover{
+    background:#60a5fa;
+}
+
+/* Background */
+
+body{
+    min-height:100vh;
+    margin:0;
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #bfd7ff,
+        #7db7ff,
+        #4f8fe8
+    );
+}
+
+/* Floating Bubbles */
+
+.bubble{
+    position:absolute;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+
+    background:#e5e7eb;      /* Light Gray */
+    color:#1e3a8a;           /* Dark Blue Text */
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.12);
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+
+    animation:float 12s infinite ease-in-out;
+}
+
+/* Hover */
+
+.bubble:hover{
+    background:#fecaca;      /* Light Red */
+    color:#7f1d1d;
+    transform:scale(1.08);
+}
+
+/* Bubble Positions */
+
+.about{
+    top:10%;
+    left:10%;
+}
+
+.skills{
+    top:25%;
+    right:15%;
+    animation-delay:2s;
+}
+
+.contact{
+    bottom:20%;
+    left:20%;
+    animation-delay:4s;
+}
+
+.resume{
+    bottom:15%;
+    right:20%;
+    animation-delay:6s;
+}
+
+/* Floating Animation */
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-30px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
