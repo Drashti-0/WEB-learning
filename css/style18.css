@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width:100%;
+    height: auto;
+}
+
+.nowrap{
+    white-space:nowwrap;
+    /*nowrap is nav write show*/
+}
+
+
+body{
+    font:1.5rem "Nuito" ,sans-serif;
+    min-height: 100vh;
+
+    background-color: gray;
+    background-image: radial-gradient(whitesmoke,#475569);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+header,footer{
+    position: sticky;
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+header{
+    top:0;
+}
+
+
+nav{
+    background-color: rgb(61, 54, 71);
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    font-weight:bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a, nav a:visited{
+    color: black;
+}
+
+nav a:hover,nav a:focus{
+    color: hsla(0,0%,20%,0.6);
+
+}
+
+main{
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    padding: 1rem;
+    
+   
+    /* default color */
+}
+
+
+footer{
+    bottom: 0;
+}
+
+/* runtime par je only media ma change */
+/* @media compulsory nathi */
+
+/* 576px karta moti screen hoy tyare */
+@media screen and (min-width: 576px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+
+    main{
+        background-color: green;
+        /* main no color green thase */
+    }
+}
+
+.designer,
+.rel,
+.card{
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 1rem;
+}
+.designer img,
+.rel img,
+.card img{
+    border: 5px double #333;
+    border-radius: 50%;
+    width: 70%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+.designer figure,
+.rel figure,
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.designer figcaption,
+.rel figcaption,
+.card figcaption{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+
+/* 768px karta moti screen hoy tyare */
+@media screen and (min-width: 768px){
+
+    nav{
+    display: none;
+    /* Mobile screen par navigation menu hide karva */
+}
+
+.card{
+    width: min(100%,325px);
+    /* Card ni maximum width 325px rakhva */
+}
+
+.card figure{
+    flex-flow: column-reverse;
+    /* Figure na elements (image ane caption) ni position ulati karva */
+}
+
+.card figcaption{
+    margin: 0.1em 0;
+    /* Caption ni upar ane niche ochhi space aapva */
+}
+
+.card p{
+    margin-top:1rem;
+    /* Paragraph ne upar thi 1rem ni space aapva */
+}
+
+    main{
+        background-color: rgb(170, 123, 169);
+        justify-content: center;
+       flex-flow: row wrap;
+       padding: 1rem;
+
+       .card{
+        width: min(100%, 400px);
+       }
+
+       .card :last-child{
+        order: -1;
+
+       }
+
+    }
+}
+
+/* 992px karta moti screen hoy tyare */
+@media screen and (min-width: 992px){
+
+
+    main{
+        background-color: purple;
+        /* desktop size mate purple color */
+    }
+}
+
